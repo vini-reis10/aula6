@@ -5,13 +5,23 @@ import kotlin.time.Duration
 
 class Music {
     //Parâmetros do mêtodo Factory
-    fun musicFactory(Title:String,
-                     duration:Short,
-                     musicGender: MusicGender,
-                     dateRelease: Short,
-                     album: String,
-                     composer: String,
-                     record: String
-    // Cosntrutor da class Music do model
-                     ) = model.Music()
+    fun musicFactory(
+        title: String,
+        duration: Short,
+        musicGender: MusicGender,
+        dateRelease: Short,
+        album: String,
+        composer: String,
+        record: String
+    ) = model.Music(
+        title = title,
+        duration = duration,
+        musicGender = musicGender,
+        dateRelease = dateRelease,
+        album = album,
+        composer = composer,
+        record = record,
+
+
+        )
 }
